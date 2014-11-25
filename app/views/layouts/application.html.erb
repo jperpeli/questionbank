@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Questionbank</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%=link_to "Home", questions_path %>
+  <%=link_to "Create New Question", welcome_createquestion_path %>
+  <%=link_to "Take Test", welcome_taketest_path %>
+  <%=link_to "About Us", welcome_about_path %>
+  <%=link_to "Contact Us", welcome_contact_path %>
+<%= yield %>
+
+</body>
+</html>
