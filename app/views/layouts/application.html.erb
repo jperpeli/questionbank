@@ -7,12 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <%=link_to "Home", questions_path %>
-  <%=link_to "Create New Question", welcome_createquestion_path %>
-  <%=link_to "Take Test", welcome_taketest_path %>
-  <%=link_to "About Us", welcome_about_path %>
-  <%=link_to "Contact Us", welcome_contact_path %>
+<div class="container">
+    <ul class="nav nav-tabs">
+      <li>   <%=link_to "Home", questions_path %> </li>
+      <li> <%=link_to "Create New Question", welcome_createquestion_path %> </li>
+      <li>  <%=link_to "Take Test", welcome_taketest_path %></li>
+      <li> <%=link_to "About Us", welcome_about_path %> </li>
+      <li>  <%=link_to "Contact Us", welcome_contact_path %> <li>
+  </ul>
+  </div>
 <%= yield %>
 
 </body>
